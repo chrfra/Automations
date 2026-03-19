@@ -72,43 +72,41 @@
 
 ## Traceability
 
-*(Populated during roadmap creation)*
-
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| REQ-01 | — | Pending |
-| REQ-02 | — | Pending |
-| REQ-03 | — | Pending |
-| REQ-04 | — | Pending |
-| REQ-05 | — | Pending |
-| REQ-06 | — | Pending |
-| REQ-07 | — | Pending |
-| REQ-08 | — | Pending |
-| REQ-09 | — | Pending |
-| REQ-10 | — | Pending |
-| REQ-11 | — | Pending |
-| REQ-12 | — | Pending |
-| REQ-13 | — | Pending |
-| REQ-14 | — | Pending |
-| REQ-15 | — | Pending |
-| REQ-16 | — | Pending |
-| REQ-17 | — | Pending |
-| REQ-18 | — | Pending |
-| REQ-19 | — | Pending |
-| REQ-20 | — | Pending |
-| REQ-21 | — | Pending |
-| REQ-22 | — | Pending |
-| REQ-23 | — | Pending |
-| REQ-24 | — | Pending |
-| REQ-25 | — | Pending |
-| REQ-26 | — | Pending |
-| REQ-27 | — | Pending |
+| REQ-01 | Phase 1 | Pending |
+| REQ-02 | Phase 1 | Pending |
+| REQ-03 | Phase 1 | Pending |
+| REQ-04 | Phase 1 | Pending |
+| REQ-05 | Phase 3 | Pending |
+| REQ-06 | Phase 1 | Pending |
+| REQ-07 | Phase 2 | Pending |
+| REQ-08 | Phase 2 | Pending |
+| REQ-09 | Phase 3 | Pending |
+| REQ-10 | Phase 3 | Pending |
+| REQ-11 | Phase 2 | Pending |
+| REQ-12 | Phase 2 | Pending |
+| REQ-13 | Phase 3 | Pending |
+| REQ-14 | Phase 3 | Pending |
+| REQ-15 | Phase 3 | Pending |
+| REQ-16 | Phase 3 | Pending |
+| REQ-17 | Phase 3 | Pending |
+| REQ-18 | Phase 4 | Pending |
+| REQ-19 | Phase 4 | Pending |
+| REQ-20 | Phase 4 | Pending |
+| REQ-21 | Phase 4 | Pending |
+| REQ-22 | Phase 4 | Pending |
+| REQ-23 | Phase 4 | Pending |
+| REQ-24 | Phase 4 | Pending |
+| REQ-25 | Phase 4 | Pending |
+| REQ-26 | Phase 4 | Pending |
+| REQ-27 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 27 total
-- Mapped to phases: 0
-- Unmapped: 27 ⚠️
+- Mapped to phases: 27
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-19*
-*Last updated: 2026-03-19 after initial definition*
+*Last updated: 2026-03-19 after roadmap creation — all 27 requirements mapped*
