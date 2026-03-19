@@ -27,7 +27,13 @@
   2. An API key submitted with a request is stored in memory for the duration of the call but never written to disk in plaintext — the SQLite schema uses AES-256-GCM ciphertext when persisting credentials.
   3. The encryption key is stored in a volume-backed file (data/secrets/key) and a startup health check refuses to start the server if the key is missing or cannot decrypt a test blob.
   4. Docker Compose brings up the stack with a single command and the /api/health endpoint returns 200 on both test (8094) and prod (8095) ports.
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Test scaffold: Vitest config + 4 test files covering all 6 requirements
+- [ ] 01-02-PLAN.md — Project scaffold: crypto.ts, db.ts, proxy.ts + Vite client placeholder
+- [ ] 01-03-PLAN.md — API routes: POST /api/execute + GET /api/health wired in Fastify
+- [ ] 01-04-PLAN.md — Docker: multi-stage Dockerfile + docker-compose.yml + smoke test checkpoint
 
 ### Phase 2: Transform Engine + Request Builder UI
 **Goal**: A user can open the app, configure an API request, execute it, write a transformation, and see the raw response and transformed output side-by-side in real time.
@@ -71,7 +77,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/? | Not started | - |
+| 1. Foundation | 0/4 | Planned | - |
 | 2. Transform Engine + Request Builder UI | 0/? | Not started | - |
 | 3. AI Features + Automation CRUD | 0/? | Not started | - |
 | 4. Scheduling + Output Archive | 0/? | Not started | - |
