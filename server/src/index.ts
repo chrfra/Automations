@@ -5,6 +5,7 @@ import { loadEncryptionKey } from '@/lib/crypto.js'
 import { openDb, initSchema } from '@/lib/db.js'
 import healthRoute from '@/routes/health.js'
 import executeRoute from '@/routes/execute.js'
+import staticPlugin from '@/plugins/static.js'
 
 const PORT = Number(process.env.PORT ?? 3001)
 const DB_PATH = process.env.DB_PATH ?? 'data/automations.db'
@@ -41,7 +42,8 @@ async function main() {
     return reply.status(500).send({ error: 'Internal server error' })
   })
 
-  // TODO Plan 04: register @fastify/static here (after routes) for prod SPA serving
+  // 6b. Static + SPA fallback LAST (catch-all must come after API routes)
+  await fastify.register(staticPlugin)
 
   // 7. Start listening
   await fastify.listen({ port: PORT, host: '0.0.0.0' })
