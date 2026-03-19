@@ -1,0 +1,50 @@
+# Automations Docker Compose
+#
+# Usage:
+#   docker compose --profile test up --build -d   # start test (port 8094)
+#   docker compose --profile prod up --build -d   # start prod (port 8095)
+#
+# First-run key bootstrap (run once per environment to initialise the encryption key):
+#   docker compose --profile test run --rm app-test sh -c \
+#     "node -e \"const{randomBytes}=require('crypto');const{writeFileSync,mkdirSync}=require('fs');mkdirSync('/app/data/secrets',{recursive:true});writeFileSync('/app/data/secrets/key',randomBytes(32).toString('hex'))\""
+#   docker compose --profile prod run --rm app-prod sh -c \
+#     "node -e \"const{randomBytes}=require('crypto');const{writeFileSync,mkdirSync}=require('fs');mkdirSync('/app/data/secrets',{recursive:true});writeFileSync('/app/data/secrets/key',randomBytes(32).toString('hex'))\""
+#
+# Alternatively use: docker compose --profile test run --rm app-test npm run keygen
+
+services:
+  app-test:
+    build: .
+    ports:
+      - "8094:3000"
+    volumes:
+      - test-secrets:/app/data/secrets
+      - test-db:/app/data
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      KEY_PATH: /app/data/secrets/key
+      DB_PATH: /app/data/automations.db
+    profiles: [test]
+    restart: unless-stopped
+
+  app-prod:
+    build: .
+    ports:
+      - "8095:3000"
+    volumes:
+      - prod-secrets:/app/data/secrets
+      - prod-db:/app/data
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      KEY_PATH: /app/data/secrets/key
+      DB_PATH: /app/data/automations.db
+    profiles: [prod]
+    restart: unless-stopped
+
+volumes:
+  test-secrets:
+  test-db:
+  prod-secrets:
+  prod-db:
