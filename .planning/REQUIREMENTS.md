@@ -7,12 +7,12 @@
 
 ### Request Builder
 
-- [ ] **REQ-01**: User can input an API endpoint URL
-- [ ] **REQ-02**: User can select request method (GET, POST, PUT, PATCH, DELETE)
-- [ ] **REQ-03**: User can add, edit, and remove request headers as key/value pairs
-- [ ] **REQ-04**: User can input a request body (shown only for POST/PUT/PATCH)
-- [ ] **REQ-05**: User can paste an API key; backend AI suggests auth placement (Bearer header, named header, or query param) with a one-click confirmation UI
-- [ ] **REQ-06**: User can execute the request and see the raw response (HTTP status, response headers, body) immediately
+- [x] **REQ-01**: User can input an API endpoint URL
+- [x] **REQ-02**: User can select request method (GET, POST, PUT, PATCH, DELETE)
+- [x] **REQ-03**: User can add, edit, and remove request headers as key/value pairs
+- [x] **REQ-04**: User can input a request body (shown only for POST/PUT/PATCH)
+- [x] **REQ-05**: User can paste an API key; backend AI suggests auth placement (Bearer header, named header, or query param) with a one-click confirmation UI
+- [x] **REQ-06**: User can execute the request and see the raw response (HTTP status, response headers, body) immediately
 
 ### Transformation
 
@@ -74,12 +74,12 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| REQ-01 | Phase 1 | Pending |
-| REQ-02 | Phase 1 | Pending |
-| REQ-03 | Phase 1 | Pending |
-| REQ-04 | Phase 1 | Pending |
-| REQ-05 | Phase 3 | Pending |
-| REQ-06 | Phase 1 | Pending |
+| REQ-01 | Phase 1 | Complete |
+| REQ-02 | Phase 1 | Complete |
+| REQ-03 | Phase 1 | Complete |
+| REQ-04 | Phase 1 | Complete |
+| REQ-05 | Phase 3 | Complete |
+| REQ-06 | Phase 1 | Complete |
 | REQ-07 | Phase 2 | Pending |
 | REQ-08 | Phase 2 | Pending |
 | REQ-09 | Phase 3 | Pending |
