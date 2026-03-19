@@ -9,7 +9,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const staticPlugin: FastifyPluginAsync = async (fastify) => {
   if (process.env.NODE_ENV !== 'production') return
   await fastify.register(fastifyStatic, {
-    root: join(__dirname, '../../../client/dist'),
+    root: join(__dirname, '../../client/dist'),
     prefix: '/',
   })
   fastify.setNotFoundHandler((_req, reply) => {
