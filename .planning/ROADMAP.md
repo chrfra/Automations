@@ -9,7 +9,7 @@
 
 ## Phases
 
-- [ ] **Phase 1: Foundation** — Backend skeleton: Fastify + SQLite + encrypted credentials + HTTP proxy
+- [x] **Phase 1: Foundation** — Backend skeleton: Fastify + SQLite + encrypted credentials + HTTP proxy (completed 2026-03-19)
 - [ ] **Phase 2: Transform Engine + Request Builder UI** — Full workflow in browser: build request, execute, transform, view side-by-side
 - [ ] **Phase 3: AI Features + Automation CRUD** — AI template generation, save/load/edit/delete/duplicate automations
 - [ ] **Phase 4: Scheduling + Output Archive** — Background scheduler, output file archive, in-app file browser
@@ -77,7 +77,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 3/4 | In Progress|  |
+| 1. Foundation | 4/4 | Complete   | 2026-03-19 |
 | 2. Transform Engine + Request Builder UI | 0/? | Not started | - |
 | 3. AI Features + Automation CRUD | 0/? | Not started | - |
 | 4. Scheduling + Output Archive | 0/? | Not started | - |

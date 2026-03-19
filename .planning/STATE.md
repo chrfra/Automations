@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-03-PLAN.md
-last_updated: "2026-03-19T12:11:09.195Z"
+stopped_at: Completed 01-04-PLAN.md
+last_updated: "2026-03-19T13:18:29.029Z"
 last_activity: 2026-03-19 — Roadmap created; 27 requirements mapped to 4 phases
 progress:
   total_phases: 4
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 4
-  completed_plans: 3
+  completed_plans: 4
   percent: 0
 ---
 
@@ -56,6 +56,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01 P01 | 2 | 2 tasks | 6 files |
 | Phase 01-foundation P02 | 4 | 3 tasks | 13 files |
 | Phase 01-foundation P03 | 2 | 2 tasks | 4 files |
+| Phase 01-foundation P04 | 45 | 3 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -72,6 +73,9 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: callUpstream uses dual overloads (positional + options object) to satisfy both plan signature and test files
 - [Phase 01-foundation]: loadEncryptionKey accepts 64-char hex string OR raw 32-byte binary for flexibility
 - [Phase 01-foundation]: buildApp() factory exported alongside fp() plugin in execute.ts — test file expects named export while index.ts uses plugin registration
+- [Phase 01-foundation]: Static plugin path uses ../client/dist relative to __dirname (/app/dist) — not ../../../ as in plan interface example
+- [Phase 01-foundation]: @fastify/cors upgraded from v9 to v10 for Fastify v5 compatibility (v9 peer-dep mismatch caused startup failure)
+- [Phase 01-foundation]: test-secrets and prod-secrets are separate named volumes — prevents encryption key bleed between environments
 
 ### Pending Todos
 
@@ -84,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-19T12:11:09.192Z
-Stopped at: Completed 01-03-PLAN.md
+Last session: 2026-03-19T13:18:29.026Z
+Stopped at: Completed 01-04-PLAN.md
 Resume file: None
