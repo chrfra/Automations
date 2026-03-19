@@ -1,0 +1,7 @@
+node_modules/
+dist/
+data/secrets/
+data/automations.db
+data/outputs/
+.env
+*.local
